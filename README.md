@@ -10,6 +10,12 @@
 * git push -u origin HEAD: Push to remote branch having same name as the local branch
 * git remote show origin: Shows all tracking info
 * git remote set-head origin some_branch: Changes the HEAD
+* git stash list [<options>]
+* git stash show [<options>] [<stash>]
+* git stash drop [-q|--quiet] [<stash>]
+* git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]
+* git stash clear
+* git stash create [<message>]
 
 ### View Git config
 > cat .git/config: 
