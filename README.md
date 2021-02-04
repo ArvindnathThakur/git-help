@@ -17,3 +17,6 @@ Git cheat sheet
 
 ### Create alias for git command
 `git config --global alias.pushd "push -u origin HEAD"`
+
+### Configure git to prune branches while fetching
+`git config --global fetch.prune true`
