@@ -2,7 +2,7 @@
 Git cheat sheet
 
 
-## Git commands
+### Git commands
 * git clone repo-url: Clone a repository
 * git branch -a: Shows all the branches
 * git branch -d branch-name: Deletes the local branch
@@ -13,7 +13,8 @@ Git cheat sheet
 * git remote show origin: Shows all tracking info
 * git remote set-head origin some_branch: Changes the HEAD
 
-> cat .git/config: View Git config
+### View Git config
+> cat .git/config: 
 
 ### Create alias for git command
 `git config --global alias.pushd "push -u origin HEAD"`
