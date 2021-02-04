@@ -1,6 +1,4 @@
-# git-help
-Git cheat sheet
-
+## Git cheat sheet
 
 ### Git commands
 * git clone repo-url: Clone a repository
