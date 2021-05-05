@@ -27,19 +27,34 @@
 `git config --global fetch.prune true`
 
 ### Reverting to previous commits
+#### Way 1
 * do the needed changes in the feature branch
-`$ git commit -m "fixed issues in feature-branch'`
+> `$ git commit -m "fixed issues in feature-branch'`
 
 * create new branch tracking dev branch (branch to which you merge)
-`$ git checkout -b revert-the-revert-branch -t dev`
+> `$ git checkout -b revert-the-revert-branch -t dev`
 
 * revert the reversion commit
-`$ git revert <revert-commit-hash> | git revert old_hash..new_hash`
+> `$ git revert <revert-commit-hash> | git revert old_hash..new_hash`
 
 * checkout the original feature branch
-`$ git checkout feature-branch`
+> `$ git checkout feature-branch`
 
 * merge the revert branch (revert-the-revert-branch)
-`$ git merge revert-the-revert-branch`
+> `$ git merge revert-the-revert-branch`
 
 * handle merge conflicts and commit and PR
+
+#### Way 2
+Reverting public commits
+* Checkout the commit to revert to
+> `git checkout -f [HASH] -- .`
+
+* Create a new branch, the commit becomes the head of the branch
+> `git checkout -b [New branch with reverted changes]`
+
+* Commit the changes
+> `git commit -a -m "Reverted the changes"`
+
+* Push and create the PR
+> `it push -u origin [New branch with reverted changes]`
