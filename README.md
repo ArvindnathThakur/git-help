@@ -25,3 +25,21 @@
 
 ### Configure git to prune branches while fetching
 `git config --global fetch.prune true`
+
+### Reverting to previous commits
+* do the needed changes in the feature branch
+$ git commit -m "fixed issues in feature-branch'
+
+* create new branch tracking dev branch (branch to which you merge)
+$ git checkout -b revert-the-revert-branch -t dev
+
+* revert the reversion commit
+$ git revert <revert-commit-hash> | git revert old_hash..new_hash
+
+* checkout the original feature branch
+$ git checkout feature-branch
+
+* merge the revert branch (revert-the-revert-branch)
+$ git merge revert-the-revert-branch
+
+*handle merge conflicts and commit and PR
