@@ -57,4 +57,4 @@ Reverting public commits
 > `git commit -a -m "Reverted the changes"`
 
 * Push and create the PR
-> `it push -u origin [New branch with reverted changes]`
+> `git push -u origin [New branch with reverted changes]`
