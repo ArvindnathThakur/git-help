@@ -58,3 +58,15 @@ Reverting public commits
 
 * Push and create the PR
 > `git push -u origin [New branch with reverted changes]`
+> 
+
+### Reverting the commits
+* Reset the index and working tree to the desired tree
+> git reset --hard [SHA]
+
+* Move the branch pointer back to the previous HEAD
+git reset --soft "HEAD@{1}"
+
+* Commit the changes
+git commit -m "Reverting"
+
