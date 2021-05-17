@@ -62,11 +62,11 @@ Reverting public commits
 
 ### Reverting the commits
 * Reset the index and working tree to the desired tree
-> git reset --hard [SHA]
+> `git reset --hard [SHA]`
 
 * Move the branch pointer back to the previous HEAD
-git reset --soft "HEAD@{1}"
+> `git reset --soft "HEAD@{1}"`
 
 * Commit the changes
-git commit -m "Reverting"
+> `git commit -m "Reverting"`
 
