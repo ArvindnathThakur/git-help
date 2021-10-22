@@ -19,7 +19,7 @@
   
 ### Create a branch
   1. move to master and pull the latest
-    > `git checkout master`
+    > `git checkout master` & `git pull master`
   2. Create the branch
     > `git checkout -b feature/feature-name`
   3. Push the branch to remote
