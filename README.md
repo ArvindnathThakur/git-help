@@ -23,7 +23,7 @@
   2. Create the branch
     > `git checkout -b feature/feature-name`
   3. Push the branch to remote
-    > `git push -u origin
+    > `git push -u origin`
 
 ### View Git config
 > cat .git/config: 
