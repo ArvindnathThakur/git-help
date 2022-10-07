@@ -78,3 +78,10 @@ Reverting public commits
 * Commit the changes
 > `git commit -m "Reverting"`
 
+### Merging two branch
+Move the code to new folder
+
+* git remote add -f quote-old /Users/vwfs/_git/DirectSelling/Quote/svcs/quote-old
+* git merge --allow-unrelated-histories -s ours --no-commit quote-old/master
+* git read-tree --prefix=quote/ -u quote-old/master
+* git commit -m "Merge Quote to Finance"
